@@ -1,0 +1,1118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#desktop {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+}
+#desktop .logo {
+  color: #000000;
+  letter-spacing: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* #mobile .logo:hover{
+    background-color: rgb(176, 176, 176);
+} */
+#desktop ul {
+  display: flex;
+  gap: 50px;
+}
+#desktop a {
+  text-decoration: none;
+  color: #333;
+  font-family: 500;
+}
+#desktop li {
+  list-style-type: none;
+}
+/* HERO STARTS HERE */
+#hero {
+  background-color: #333;
+  height: 570px;
+  /* position: absolute; */
+  width: 100%;
+  background-image: url(/images/pexels-junior-teixeira-1064069-2047905.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#hero h1 {
+  font-size: 60px;
+  font-weight: 100;
+  color: white;
+  margin-left: 50px;
+  padding-top: 110px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#hero p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 50px;
+  padding-top: 50px;
+  /* margin-top: 50px; */
+  letter-spacing: 1px;
+}
+#hero button {
+  padding: 20px 40px;
+  /* background-color: #EEEEEE ; */
+  background-color: #f0f0f0;
+  margin-left: 50px;
+  margin-top: 50px;
+  border: none;
+  cursor: pointer;
+}
+#hero button:hover {
+  background-color: #acaaaa;
+}
+#hero button:hover a {
+  color: #fff;
+}
+#hero button a {
+  font-weight: 100;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#social {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 145px;
+  gap: 10px;
+}
+#socials img {
+  background-color: white;
+  color: white;
+  width: 15px;
+  cursor: pointer;
+}
+/* ABOUT SECTION STARTS HERE */
+#about {
+  background-color: transparent;
+  height: 675px;
+}
+#about h3 {
+  text-align: center;
+  padding-top: 175px;
+  color: #333;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#about p {
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 18px;
+  font-family: sans-serif;
+}
+.box img {
+  width: 60px;
+  margin-top: 10px;
+}
+#box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+.box {
+  max-width: 300px;
+  /* border: 2px solid red; */
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+}
+.box h4 {
+  letter-spacing: 1px;
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+/* DESIGN STARTS HERE */
+#design {
+  display: flex;
+  background-color: #f0f0f0;
+  height: 600px;
+  gap: 70px;
+}
+.design-img {
+  margin-right: 50px;
+  margin-top: 110px;
+}
+.design-img img {
+  width: 550px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.inner {
+  margin-left: 50px;
+  margin-top: 170px;
+}
+.inner h3 {
+  color: #333;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.inner p {
+  margin-top: 25px;
+  line-height: 1.7;
+  font-family: sans-serif;
+}
+.inner button {
+  margin-top: 15px;
+  background-color: #000000;
+  padding: 14px 18px;
+  border: none;
+  cursor: pointer;
+}
+.inner button:hover {
+  background-color: #cdcdcd;
+}
+.inner button:hover a {
+  color: #333;
+}
+
+.inner button a {
+  color: white;
+  font-size: 14px;
+  line-height: 1px;
+  text-decoration: none;
+}
+
+/* TEAM SECTION STARTS HERE */
+#team {
+  background-color: white;
+  height: 890px;
+}
+#team h3 {
+  text-align: center;
+  color: #333;
+  font-size: 25px;
+  padding-top: 120px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#team p {
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+  margin-top: 18px;
+  font-family: sans-serif;
+}
+#team-box img {
+  width: 100%;
+  height: 210px;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+#team-box {
+  background-color: white;
+  margin-top: 100px;
+  max-width: 280px;
+  height: 480px;
+  /* border: 2px solid black; */
+  box-shadow: rgb(71, 71, 71) 0px 1px 5px;
+  cursor: pointer;
+}
+
+#team-box h2 {
+  /* margin-top: 20px; */
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#team-box h5 {
+  margin-bottom: 20px;
+  font-family: 100;
+  font-weight: 500;
+  font-size: 14px;
+  color: #cecece;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#team-box span {
+  /* margin-top: 25px; */
+  line-height: 1.5;
+  color: #333;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.padding {
+  padding: 15px;
+}
+#team-box button {
+  background-color: #e0e0e0;
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#team-box button:hover {
+  background-color: #606060;
+  transition: 0.5s;
+}
+#team-box button:hover a {
+  color: white;
+}
+#team-box button a {
+  letter-spacing: 1px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 200;
+}
+/* PARTNERS SECTION STARTS HERE */
+#partners {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  background-color: #606060;
+}
+#numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#numbers h1 {
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+#numbers p {
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* OUR WORKS SECTION STARTS HERE */
+#works {
+  background-color: white;
+  height: 800px;
+}
+#works h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#works p {
+  text-align: center;
+  color: #333;
+  font-size: 20px;
+  margin-top: 18px;
+  font-family: sans-serif;
+}
+.work-img img {
+  width: 290px;
+  height: 225px;
+  cursor: pointer;
+}
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  /* margin: 20px; */
+  gap: 20px;
+}
+.work-img {
+  max-width: 500px;
+}
+.work-img img:hover {
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+/* SKILLS SECTION STARTS HERE */
+#skills {
+  background-color: #f0f0f0;
+  height: 455px;
+}
+.skill-cont {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 110px;
+}
+.container-skills1 {
+  background-color: transparent;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.container-skills2 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.container-skills1 h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container-skills1 p {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+}
+.skill {
+  width: 600px;
+  background-color: #8d8d8d;
+  margin-top: 15px;
+}
+.skills {
+  text-align: right;
+  color: white;
+  padding: 5px;
+}
+.photography {
+  width: 90%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #545454;
+}
+.web-design {
+  width: 85%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #545454;
+}
+.photoshops {
+  width: 75%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #545454;
+}
+
+.photo label,
+.web label,
+.photoshop label {
+  font-size: 18px;
+  color: #333;
+  letter-spacing: 3px;
+  font-weight: 100;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.web i,
+.photo i,
+.photoshop i {
+  font-size: 20px;
+}
+/* PRICING SECTION STARTS HERE */
+#pricing {
+  background-color: #606060;
+  height: 880px;
+}
+#pricing h3 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 110px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#pricing p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 19px;
+  color: white;
+  font-family: sans-serif;
+}
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#pricing-boxes {
+  width: 390px;
+  height: 550px;
+  text-align: center;
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-shadow: rgb(21, 21, 21) 5px 15px 15px;
+}
+/* .pricing-boxes{
+    height: 590px;
+    border: 2px solid pink;
+} */
+.h4 {
+  background-color: #202020;
+  height: 130px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#red {
+  background-color: rgb(235, 76, 76);
+}
+.h4 h4 {
+  font-size: 23px;
+  letter-spacing: 1px;
+  color: white;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rows span {
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  /* display: flex; */
+}
+.rows label {
+  font-weight: 100;
+  font-family: Helvetica, sans-serif;
+}
+.rows {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.dollar {
+  background-color: white;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.button-background-color {
+  background-color: #f0f0f0;
+  height: 95px;
+}
+.dollar label#per-month {
+  font-size: 16px;
+  color: #8d8d8d;
+  padding-top: 20px;
+}
+.dollar span#dollar {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pricing-boxes button {
+  padding: 15px 20px;
+  border: none;
+  width: 100px;
+  margin-top: 20px;
+  background-color: #202020;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#pricing-boxes button:hover {
+  background-color: #606060;
+}
+#pricing-boxes button:hover a {
+  color: white;
+}
+
+#pricing-boxes button a {
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+hr {
+  border: 1px solid #f0efef;
+}
+
+/* <!-- CONTACT SECTION STARTS HERE --> */
+#contact {
+  background-color: #f0f0f0;
+  height: 100%;
+}
+#contact h3 {
+  color: #333;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 100px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#contact p {
+  color: #333;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 18px;
+  font-family: sans-serif;
+}
+.contact-deatails {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 40px;
+  gap: 30px;
+}
+.location,
+.telephone,
+.phone {
+  display: flex;
+}
+.contact-deatails i {
+  font-size: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.contact-deatails label {
+  color: #333;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.contact-deatails label a {
+  text-decoration: none;
+  color: #333;
+}
+.input-btn-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 50px;
+}
+.input-btn-details input {
+  padding: 10px;
+}
+.input-btn-details button {
+  width: 170px;
+  padding: 15px 20px;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.input-btn-details button a {
+  letter-spacing: 1px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+.input-btn-details button:hover {
+  background-color: #cdcdcd;
+}
+.input-btn-details button:hover a {
+  color: #333;
+}
+
+.location-img {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 35px;
+  padding-bottom: 50px;
+}
+.location-img img {
+  width: 100%;
+  height: 525px;
+}
+
+#footer {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.Me,
+.powered,
+.author {
+  text-align: center;
+}
+.powered label {
+  font-size: 13px;
+  color: white;
+  margin-bottom: 10px;
+}
+.powered{
+  margin-bottom: 10px;
+}
+.powered a {
+  color: white;
+  text-decoration: none;
+}
+.author {
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+}
+.Me img {
+  background-color: white;
+  padding-bottom: 5px;
+}
+.Me a img {
+  width: 40px;
+}
+#mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #desktop {
+    display: none;
+  }
+  
+  #mobile{
+    display: block;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+   }
+   
+   #mobile #myLinks{
+    display: none;
+   }
+   #mobile a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    display: block;
+    overflow: hidden;
+   }
+   #mobile a.icon{
+    background-color: white;
+    color: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    border: 2px solid black;
+
+   }
+   #mobile a:hover{
+    background-color: #ddd;
+    color: black;
+   }
+   .active{
+    background-color: black;
+    color: white;
+   }
+  /* HERO STARTS HERE */
+  #hero {
+    height: 100%;
+    width: 100%;
+  }
+  #hero h1 {
+    font-size: 40px;
+    padding-top: 100px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  #hero p {
+    font-size: 19px;
+    font-weight: 400;
+    padding-right: 2em;
+  }
+  #hero button {
+    padding: 20px 20px;
+    /* background-color: #EEEEEE ; */
+    background-color: #f0f0f0;
+  }
+  #social {
+    margin-top: 120px;
+  }
+  #socials img {
+    background-color: white;
+    color: white;
+    width: 15px;
+    cursor: pointer;
+  }
+  /* ABOUT SECTION STARTS HERE */
+  #about {
+    width: 100%;
+    height: 100%;
+  }
+  #about h3 {
+    padding-top: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  #about p {
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 25px;
+    font-family: sans-serif;
+  }
+  .box img {
+    width: 60px;
+    margin-top: 10px;
+  }
+  #box-container {
+    gap: 0;
+  }
+  .box {
+    max-width: 375px;
+    /* border: 2px solid red; */
+    margin-top: 0px;
+  }
+  #box-responsive {
+    margin-top: 30px;
+  }
+  .box h4 {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  .box p {
+    font-size: 15px;
+    line-height: 0;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+  #box-support {
+    margin-bottom: 100px;
+  }
+  /* DESIGN STARTS HERE */
+  #design {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    height: 100%;
+    gap: 50px;
+  }
+  .design-img {
+    margin-left: 50px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .design-img img {
+    width: 100%;
+  }
+  .inner {
+    margin-top: 120px;
+  }
+  .inner h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  .inner p {
+    font-size: 16px;
+    font-weight: 200;
+    padding-right: 2em;
+    font-family: sans-serif;
+  }
+  .inner button {
+    margin-top: 15px;
+    background-color: #000000;
+    padding: 14px 25px;
+  }
+  .inner button a {
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  /* TEAM SECTION STARTS HERE */
+  #team {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+  }
+  #team h3 {
+    font-size: 20px;
+    padding-top: 150px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  #team p {
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 25px;
+    font-family: sans-serif;
+    margin-bottom: 55px;
+  }
+  #team-box img {
+    width: 100%;
+    height: 230px;
+  }
+  .team-container {
+    gap: 20px;
+  }
+  #team-box {
+    margin-top: 0px;
+    max-width: 370px;
+    height: 455px;
+  }
+  #team-box h2 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  #team-box h5 {
+    font-weight: 500;
+    color: #7f7f7f;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #team-box span {
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+  .teamBox {
+    margin-bottom: 100px;
+  }
+  /* PARTNERS SECTION STARTS HERE */
+  #partners {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #numbers {
+    gap: 10px;
+  }
+  #numbers h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+  #numbers p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  /* TEAM SECTION STARTS HERE */
+  #works {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+  }
+  #works h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  #works p {
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+  }
+  .work-img img {
+    width: 400px;
+    height: 275px;
+    cursor: pointer;
+  }
+  .work-container {
+    gap: 2px;
+    margin-top: 85px;
+  }
+  #work-img1 {
+    margin-bottom: 100px;
+  }
+  /* SKILLS SECTION STARTS HERE */
+  #skills {
+    background-color: #f0f0f0;
+    height: 100%;
+    width: 100%;
+  }
+  .skill-cont {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 110px;
+  }
+  .container-skills1 {
+    width: 100%;
+    gap: 25px;
+  }
+  .container-skills2 {
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  .container-skills1 h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  .container-skills1 p {
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: sans-serif;
+  }
+  .skill {
+    width: 100%;
+    background-color: #8d8d8d;
+    margin-top: 15px;
+  }
+  .skills {
+    text-align: right;
+    color: white;
+    padding: 2px;
+  }
+  .photo label,
+  .web label,
+  .photoshop label {
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: sans-serif;
+  }
+  .photo i,
+  .web i,
+  .photoshop i {
+    font-size: 16px;
+  }
+  .photography {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .web-design {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  .photoshops {
+    font-size: 14px;
+    font-family: sans-serif;
+  }
+  /* PRICING SECTION STARTS HERE */
+  #pricing {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  #pricing h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 110px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  #pricing p {
+    font-size: 18px;
+    margin-top: 25px;
+    font-weight: 200;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+  }
+  .pricing-container {
+    gap: 0px;
+  }
+  #pricing-boxes {
+    width: 400px;
+    height: 550px;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  .pricing-boxes2 {
+    margin-bottom: 100px;
+  }
+  /*CONTACT SECTION STARTS HERE  */
+  #contact {
+    width: 100%;
+    height: 100%;
+  }
+  #contact h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 100px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+  }
+  #contact p {
+    font-size: 18px;
+    margin-top: 25px;
+    font-family: sans-serif;
+  }
+  .contact-deatails {
+    margin-top: 50px;
+    margin-left: 30px;
+    gap: 25px;
+  }
+  .location,
+  .telephone,
+  .phone {
+    display: flex;
+  }
+  .contact-deatails i {
+    font-size: 22px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .contact-deatails label {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+  .input-btn-details input::placeholder {
+    letter-spacing: 1.5px;
+  }
+  .input-btn-details button a {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+  }
+  .location-img {
+    margin-top: 35px;
+  }
+  .location-img img {
+    width: 100%;
+    height: 300px;
+    cursor: grabbing;
+  }
+  /* FOOTER SECTION STARTS HERE */
+  #footer{
+    width: 100%;
+    height: 100%;
+  }
+}
