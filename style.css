@@ -886,8 +886,8 @@ hr {
   }
   #team-box {
     margin-top: 0px;
-    max-width: 370px;
-    height: 455px;
+    max-width: 340px;
+    height: 100%;
   }
   #team-box h2 {
     font-size: 18px;
@@ -901,6 +901,7 @@ hr {
   }
   #team-box span {
     font-size: 15px;
+    line-height: 2;
     font-family: sans-serif;
   }
   .teamBox {
@@ -947,7 +948,7 @@ hr {
     font-family: sans-serif;
   }
   .work-img img {
-    width: 400px;
+    width: 350px;
     height: 275px;
     cursor: pointer;
   }
@@ -1050,8 +1051,8 @@ hr {
     gap: 0px;
   }
   #pricing-boxes {
-    width: 400px;
-    height: 550px;
+    width: 350px;
+    height: 100%;
     margin-top: 15px;
     cursor: pointer;
   }
