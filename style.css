@@ -123,6 +123,7 @@
   gap: 5px;
 }
 .box {
+  flex: 1;
   max-width: 300px;
   /* border: 2px solid red; */
   padding: 10px;
@@ -151,7 +152,21 @@
   width: 550px;
   border-radius: 5px;
   cursor: pointer;
+ 
 }
+/* animation starts*/
+/* @media(prefers-reduced-motion: no-preference){
+.design-img img{
+  scale: .8; opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+@keyframes fade-in {
+  to{scale: 1; opacity: 1;}
+}
+} */
+/* animation ends */
 .inner {
   margin-left: 50px;
   margin-top: 170px;
@@ -160,7 +175,7 @@
   color: #333;
   font-size: 25px;
   letter-spacing: 1px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .inner p {
   margin-top: 25px;
@@ -217,14 +232,16 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin: 0 15px 0 15px;
 }
 #team-box {
-  background-color: white;
+  flex: 1;
   margin-top: 100px;
   max-width: 280px;
   height: 100%;
   /* border: 2px solid black; */
   box-shadow: rgb(71, 71, 71) 0px 1px 5px;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -307,7 +324,7 @@
 /* OUR WORKS SECTION STARTS HERE */
 #works {
   background-color: white;
-  height: 800px;
+  height: 100%;
 }
 #works h3 {
   font-size: 25px;
@@ -323,26 +340,26 @@
   margin-top: 18px;
   font-family: sans-serif;
 }
-.work-img img {
-  width: 290px;
-  height: 225px;
-  cursor: pointer;
-}
+
 .work-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin-top: 100px;
-  /* margin: 20px; */
-  gap: 20px;
+  gap: 0;
 }
 .work-img {
-  max-width: 500px;
+  flex: 1;
+  max-width: 400px;
+  margin: 20px;
 }
-.work-img img:hover {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
+.work-img img {
+  width: 332px;
+  height: 225px;
+  cursor: pointer;
 }
+
 /* SKILLS SECTION STARTS HERE */
 #skills {
   background-color: #f0f0f0;
@@ -387,33 +404,26 @@
 .skill {
   width: 600px;
   background-color: #8d8d8d;
+  height: 25px;
+  overflow: hidden;
   margin-top: 15px;
 }
-.skills {
+.level{
+  margin-bottom: 1px;
+}
+.skill-level {
+  height: 100%;
+  width: 0;
+  border-radius: 4px;
+  padding-right: 10px;
+  line-height: 28px;
   text-align: right;
   color: white;
-  padding: 5px;
+  background: #333;
+  transition: width 1.5s ease-in-out;
 }
-.photography {
-  width: 90%;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  background-color: #545454;
-}
-.web-design {
-  width: 85%;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  background-color: #545454;
-}
-.photoshops {
-  width: 75%;
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  background-color: #545454;
+.skill-level:after{
+  content: attr(data-level);
 }
 
 .photo label,
@@ -455,23 +465,22 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 #pricing-boxes {
+  flex: 1;
   width: 390px;
   height: 550px;
   text-align: center;
-  margin-top: 75px;
+  /* margin-top: 75px; */
+  margin: 75px 15px 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: white;
   box-shadow: rgb(21, 21, 21) 5px 15px 15px;
 }
-/* .pricing-boxes{
-    height: 590px;
-    border: 2px solid pink;
-} */
+
 .h4 {
   background-color: #202020;
   height: 130px;
@@ -668,7 +677,7 @@ hr {
   color: white;
   margin-bottom: 10px;
 }
-.powered{
+.powered {
   margin-bottom: 10px;
 }
 .powered a {
@@ -690,13 +699,31 @@ hr {
 #mobile {
   display: none;
 }
-
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  background: white;
+  transition: var(--transition);
+  z-index: 999;
+}
+.hide-preloader{
+  visibility: hidden;
+  z-index: -999;
+}
 @media (max-width: 600px) {
   #desktop {
     display: none;
   }
-  
-  #mobile{
+
+  #mobile {
     display: block;
     overflow: hidden;
     background-color: #333;
@@ -704,12 +731,12 @@ hr {
     top: 0;
     width: 100%;
     z-index: 100;
-   }
-   
-   #mobile #myLinks{
+  }
+
+  #mobile #myLinks {
     display: none;
-   }
-   #mobile a{
+  }
+  #mobile a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -718,8 +745,8 @@ hr {
     font-weight: 100;
     display: block;
     overflow: hidden;
-   }
-   #mobile a.icon{
+  }
+  #mobile a.icon {
     background-color: white;
     color: black;
     display: block;
@@ -728,16 +755,15 @@ hr {
     top: 0;
     z-index: 100;
     border: 2px solid black;
-
-   }
-   #mobile a:hover{
+  }
+  #mobile a:hover {
     background-color: #ddd;
     color: black;
-   }
-   .active{
+  }
+  .active {
     background-color: black;
     color: white;
-   }
+  }
   /* HERO STARTS HERE */
   #hero {
     height: 100%;
@@ -779,21 +805,28 @@ hr {
     font-weight: 600;
     letter-spacing: 1px;
     font-family: sans-serif;
+    /* animation */
+    /* animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%; */
   }
   #about p {
     font-size: 18px;
     font-weight: 200;
     margin-top: 25px;
     font-family: sans-serif;
+    
   }
   .box img {
     width: 60px;
     margin-top: 10px;
+   
   }
   #box-container {
     gap: 0;
   }
   .box {
+    flex: 1 100%;
     max-width: 375px;
     /* border: 2px solid red; */
     margin-top: 0px;
@@ -806,12 +839,14 @@ hr {
     font-size: 15px;
     font-weight: 500;
     font-family: sans-serif;
+    
   }
   .box p {
     font-size: 15px;
     line-height: 0;
     font-weight: 100;
     font-family: sans-serif;
+    
   }
   #box-support {
     margin-bottom: 100px;
@@ -885,6 +920,7 @@ hr {
     gap: 20px;
   }
   #team-box {
+    flex: 1 100%;
     margin-top: 0px;
     max-width: 340px;
     height: 100%;
@@ -899,6 +935,7 @@ hr {
     color: #7f7f7f;
     font-family: Arial, Helvetica, sans-serif;
   }
+ 
   #team-box span {
     font-size: 15px;
     line-height: 2;
@@ -930,7 +967,6 @@ hr {
   }
   /* TEAM SECTION STARTS HERE */
   #works {
-    background-color: white;
     height: 100%;
     width: 100%;
   }
@@ -940,6 +976,7 @@ hr {
     padding-top: 100px;
     letter-spacing: 1px;
     font-family: sans-serif;
+    
   }
   #works p {
     font-size: 18px;
@@ -947,23 +984,28 @@ hr {
     font-weight: 500;
     font-family: sans-serif;
   }
-  .work-img img {
-    width: 350px;
-    height: 275px;
-    cursor: pointer;
-  }
   .work-container {
     gap: 2px;
     margin-top: 85px;
   }
+  .work-img{
+    flex: 1 100%;
+  }
+  .work-img img {
+    width: 100%;
+    height: 275px;
+    cursor: pointer;
+  }
+  
+  
   #work-img1 {
     margin-bottom: 100px;
   }
   /* SKILLS SECTION STARTS HERE */
   #skills {
-    background-color: #f0f0f0;
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
   }
   .skill-cont {
     height: 100%;
@@ -1048,17 +1090,22 @@ hr {
     font-family: sans-serif;
   }
   .pricing-container {
-    gap: 0px;
+    gap: 10px;
   }
   #pricing-boxes {
-    width: 350px;
+    flex: 1 100%;
+    /* width: 350px; */
     height: 100%;
+    /* margin: 15px 0 0 0; */
     margin-top: 15px;
     cursor: pointer;
   }
-  .pricing-boxes2 {
-    margin-bottom: 100px;
+  #pricing-boxes.priceDown{
+    margin-bottom: 50px;
   }
+  /* .pricing-boxesdown {
+    margin-bottom: 100px;
+  } */
   /*CONTACT SECTION STARTS HERE  */
   #contact {
     width: 100%;
@@ -1112,7 +1159,7 @@ hr {
     cursor: grabbing;
   }
   /* FOOTER SECTION STARTS HERE */
-  #footer{
+  #footer {
     width: 100%;
     height: 100%;
   }
